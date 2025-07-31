@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouWare 💖 Presents: Bhumi's Special Day</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(145deg, #ffd6e8, #fff0f5);
+      color: #880e4f;
+      text-align: center;
+      padding: 1.5rem;
+      overflow-x: hidden;
+    }
+
+    header {
+      background-color: #ffe0ec;
+      padding: 2rem 1rem;
+      border-radius: 20px;
+      margin-bottom: 2rem;
+      box-shadow: 0 10px 30px rgba(255, 105, 180, 0.2);
+      animation: slideDown 1s ease-out;
+    }
+
+    @keyframes slideDown {
+      from { opacity: 0; transform: translateY(-50px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    h1 {
+      font-size: 2.7rem;
+      margin-bottom: 10px;
+    }
+
+    .logo {
+      font-weight: bold;
+      color: #e91e63;
+      font-size: 1.1rem;
+      margin-bottom: 8px;
+    }
+
+    .heart-animation {
+      font-size: 2.5rem;
+      animation: heartbeat 1.2s infinite;
+    }
+
+    @keyframes heartbeat {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+    }
+
+    .photo {
+      width: 95%;
+      max-width: 340px;
+      border-radius: 20px;
+      margin: 1.5rem auto;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    .message {
+      background: white;
+      margin: 1rem auto;
+      padding: 2rem;
+      border-radius: 20px;
+      font-size: 1.2rem;
+      max-width: 600px;
+      box-shadow: 0 0 12px rgba(255, 105, 180, 0.12);
+      animation: slideUp 1s ease-out;
+      line-height: 1.6;
+    }
+
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .secret {
+      margin-top: 2rem;
+      font-size: 1rem;
+      color: #fff;
+      background: #e91e63;
+      padding: 1rem;
+      border-radius: 15px;
+      display: none;
+      animation: fadeIn 1.2s ease-in;
+    }
+
+    .reveal-btn {
+      margin-top: 1.5rem;
+      background: #ff4081;
+      color: white;
+      border: none;
+      padding: 0.9rem 1.8rem;
+      font-size: 1.1rem;
+      border-radius: 12px;
+      cursor: pointer;
+      animation: bounce 2s infinite;
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-6px); }
+    }
+
+    footer {
+      margin-top: 3rem;
+      font-size: 0.85rem;
+      color: #888;
+    }
+
+    @media (max-width: 600px) {
+      h1 { font-size: 2rem; }
+      .message { font-size: 1.05rem; padding: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <audio autoplay loop>
+    <source src="https://cdn.pixabay.com/audio/2022/10/30/audio_802b0a2a87.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+  </audio>
+
+  <header>
+    <div class="logo">✨ YouWare</div>
+    <h1>Happy Girlfriend Day, Bhumi 💕</h1>
+    <div class="heart-animation">💖</div>
+  </header>
+
+  <img class="photo" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAASABIAAD/4QCMRXhpZgAATU0AKgAAAAgABQESAAMAAAABAAEAAAEaAAUAAAABAAAAYgEbAAUAAAABAAAAagEoAAMAAAABAAIAAAExAAIAAAAiAAAAcgEyAAIAAAAUAAAAkodpAAQAAAABAAAApAAAANABAACQAAAAAgACAAIAAQKgAgAEAAAAAQAAAyOgAwAEAAAAAQAAAyQAAAAA/+IMUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAIAcDE0E..." alt="Bhumi">
+
+  <section class="message">
+    <p>Dear Bhumi,</p>
+    <p>You are the sunshine in my sky and the heartbeat in my soul. On this Girlfriend Day, I just want to say how grateful I am to have you by my side. Your smile, your laugh, and your love make every moment magical.</p>
+    <p>Here's to more memories, more hugs, more love. Forever yours,<br>❤️ Yuvraj</p>
+
+    <button class="reveal-btn" onclick="document.getElementById('secret').style.display='block'">Tap to Reveal a Secret 💌</button>
+    <div id="secret" class="secret">
+      I can't wait to spend forever with you. You're my everything. 💕
+    </div>
+  </section>
+
+  <footer>
+    Powered by YouWare • Created with love by Yuvraj 💌<br>
+    To save as an app: Tap your browser menu → "Add to Home Screen" 📲
+  </footer>
+
+</body>
+</html>
